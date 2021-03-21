@@ -14,11 +14,11 @@
     href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css"
     rel="stylesheet"
   />
-  <title>Todo List - Gaston Martin</title>
+  <title>ToDo List - Gaston Martin</title>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Todo List - Gaston Martin</a>
+    <a class="navbar-brand" href="#">ToDo List - Gaston Martin</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -35,28 +35,28 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-link" href="#">
-            Home <span class="sr-only">(current)</span>
+            Inicio <span class="sr-only">(current)</span>
           </a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0" id="filters">
-        <label class="font-weight-bold text-info mr-3">Filters</label>
+        <label class="font-weight-bold text-info mr-3">Filtros</label>
         <input type="radio" name="type" value="all" class="mx-1">
-        <label for="male" class="mb-0">All</label>
+        <label class="mb-0">ToDo</label>
         <input type="radio" name="type" value="completed" class="mx-1">
-        <label for="female" class="mb-0">Completed</label>
+        <label class="mb-0">Completada</label>
         <input type="radio" name="type" value="uncompleted" class="mx-1">
-        <label for="other" class="mr-2 mb-0">Uncompleted</label> 
+        <label class="mr-2 mb-0">Incompletada</label> 
 
         <input
           class="form-control mr-sm-2"
           type="search"
           name="words"
-          placeholder="Words"
+          placeholder="Palabra clave"
           aria-label="Search"
         >
         <button class="btn btn-outline-info my-2 my-sm-0" type="submit" id="search">
-          Search
+          Buscar
         </button>
       </form>
     </div>
@@ -75,7 +75,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">
-            Edit Todo
+            Editar ToDo
           </h5>
           <button
             type="button"
@@ -119,10 +119,10 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">
-            Close
+            Cerrar
           </button>
           <button type="button" class="btn btn-info" id="modal-btn">
-            Save
+            Guardar
           </button>
         </div>
       </div>
@@ -171,7 +171,7 @@
         <table class="table table-striped" id="table">
           <thead>
             <tr>
-              <th scope="col">Todo</th>
+              <th scope="col">ToDo</th>
               <th scope="col">Descripcion</th>
               <th scope="col">
                 <div class="d-flex justify-content-center">

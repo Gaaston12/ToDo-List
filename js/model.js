@@ -15,35 +15,29 @@ export default class Model{
         }
         
     }
-
     setView(view){
         this.view = view;
     }
-
     save(){
         localStorage.setItem('todos', JSON.stringify(this.todos));
     }
     getTodos(){
-        return this.todos;
+        return this.todos.map((todo) => ({...todo})); 
     }
-
     findTodo(id){
         return this.todos.findIndex((todo) => todo.id === id);
     }
-
     toggleCompleted(id){
         const index = this.findTodo(id);
         const todo = this.todos[index];
         todo.completed = !todo.completed;
         this.save();
     }
-
     editTodo(id, values){
         const index = this.findTodo(id);
         Object.assign(this.todos[index], values);
         this.save();
     }
-
     addTodo(title, description){
         const todo = {
             id: this.currentId++,
@@ -57,7 +51,6 @@ export default class Model{
 
         return {...todo}; 
     }
-
     removeTodo(id){
         const index = this.findTodo(id);
         this.todos.splice(index, 1);
